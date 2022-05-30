@@ -106,3 +106,19 @@ class Grafo:
         cola.put(nodo_inicial)
         # Agrega el nodo inicial a la lista visitado
         visitado.add(nodo_inicial)
+        
+        # Leer desde una cola mientras que no este vacía
+        while not cola.empty():
+            #Obtener de la cola un nodo actual
+            nodo_actual = cola.get()
+            #Imprimir el nodo actual 
+            print(nodo_actual, end = " ")
+
+            # En el siguiente nodo obtener las listas adyacentes de los nodos actuales
+            for (siguiente_nodo, peso) in self.m_list_ady[nodo_actual]:
+                # Si el siguiente nodo no está marcado como visitado 
+                if siguiente_nodo not in visitado:
+                    #Entonces lo agrega en la cola
+                    cola.put(siguiente_nodo)
+                    #Debe marcarlo como visitado
+                    visitado.add(siguiente_nodo)

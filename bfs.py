@@ -19,7 +19,7 @@ class Grafo:
     m_list_ady : mutable
         Defino el diccionario para implementar la lista adyacencia
 
-    Metodos
+    Métodos
     -------
     agregar_aristas(self, nodo1, nodo2, peso=1):
         Añadir aristas al grafo
@@ -34,7 +34,7 @@ class Grafo:
         '''
         Constructor inicializador de la clase grafo.
 
-            Parameters:
+            Parámetros:
                 m_num_de_nodos : int
                     número de nodos
                 m_nodos : int

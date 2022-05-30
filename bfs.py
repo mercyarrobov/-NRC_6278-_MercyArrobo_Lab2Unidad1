@@ -85,3 +85,24 @@ class Grafo:
         for clave in self.m_list_ady.keys():
             #Imprimi la lista de nodos con su clave
             print("nodo", clave, ": ", self.m_list_ady[clave])
+    
+    def bfs_traversal(self, nodo_inicial):
+        
+        """
+        Función que imprime el recorrido del grafo apartir de un nodo dado
+
+        Parámetros
+        ----------
+        nodo_inicial : int
+            nodo de partida del traversal
+            
+        """
+        # Obtener los nodos visitados
+        visitado = set()
+        #Inicialización de una cola
+        cola = Queue()
+
+        # Agrega el nodo inicial a la cola 
+        cola.put(nodo_inicial)
+        # Agrega el nodo inicial a la lista visitado
+        visitado.add(nodo_inicial)

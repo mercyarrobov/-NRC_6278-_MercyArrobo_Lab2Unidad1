@@ -128,3 +128,23 @@ if __name__ == "__main__":
 
     # Crea una instancia para la clase grafo y lo define con 5 nodo y que sea no directo
     g = Grafo(5, directo=False)
+
+# Agregar al grafo las aristas con un peso
+    #Agrega la arista (0,1) con peso 1
+    g.agregar_aristas(0, 1)
+    #Agrega la arista (0,2) con peso 1
+    g.agregar_aristas(0, 2)
+    #Agrega la arista (1,2) con peso 1
+    g.agregar_aristas(1, 2)
+    #Agrega la arista (1,4) con peso 1
+    g.agregar_aristas(1, 4)
+    #Agrega la arista (2,3) con peso 1
+    g.agregar_aristas(2, 3)
+
+   #Imprime las lista de adyacencia del nodo con su nodo y peso
+    g.imprimir_lista_de_adj()
+
+    #Imprime un mensaje sobre la siguiente ejecución
+    print ("Lo siguiente es la primera travesía de ancho" " (empezando por el vértice 0)")
+    #Imprime la primera travesía 
+    g.bfs_traversal(0)

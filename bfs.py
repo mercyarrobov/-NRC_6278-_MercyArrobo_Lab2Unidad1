@@ -122,3 +122,9 @@ class Grafo:
                     cola.put(siguiente_nodo)
                     #Debe marcarlo como visitado
                     visitado.add(siguiente_nodo)
+#main del programa
+if __name__ == "__main__":
+    #### Ejemplo #####
+
+    # Crea una instancia para la clase grafo y lo define con 5 nodo y que sea no directo
+    g = Grafo(5, directo=False)

@@ -148,3 +148,5 @@ if __name__ == "__main__":
     print ("Lo siguiente es la primera travesía de ancho" " (empezando por el vértice 0)")
     #Imprime la primera travesía 
     g.bfs_traversal(0)
+    
+    print(Grafo.__doc__)
